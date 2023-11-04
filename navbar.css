@@ -142,11 +142,12 @@ align-items: center;
         display: none;
     }
     .change-theme{
-        display: none;
+        display: block;
     }
     .nav__close{
         display: none;
     }
+    
 }
 
 @keyframes whiteBlack{
@@ -160,6 +161,7 @@ align-items: center;
         color:#000;
     }
 }
+
 
 /* Active link JS */
 .acrive-link{
