@@ -1,0 +1,33 @@
+.about{
+    position: relative;
+}
+.about__container{
+    gap:3rem ;
+}
+.about__data{
+    text-align: center;
+}
+.about__img{
+    width: 260px;
+    justify-self: center;
+}
+@media(min-width:576px){
+    .about__container{
+        grid-template-columns: .7fr;
+        justify-content: center;
+    }
+}
+@media(min-width:768px){
+    .about__container{
+        display: flex;
+        justify-content: center;
+    }
+    .about__data{
+        width: 480px;
+    }
+    .about__img{
+        width: 400px;
+        justify-self: center;
+    }
+
+}

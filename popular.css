@@ -1,0 +1,93 @@
+
+.popular__container{
+    padding-top: 4rem;
+}
+
+.popular__card{
+    position: relative;
+    background-color: var(--container-color);
+    padding:2rem 2rem 1rem ;
+    box-shadow: 0px 8px 20px black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background .4s;
+}
+
+
+.popular__button{
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 48%;
+    color: #fff;
+    font-size: 1.25rem;
+    box-shadow: 0 4px 20px black;
+    transition: background .3s;
+}
+
+.popular__card:hover .popular__button{
+    background-color: var( --primary-color-alt);
+}
+.popular__img{
+    width: 150px;
+    align-self: flex-start;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    transition: transform .4s;
+}
+
+.popular__card:hover .popular__img{
+    animation-name:  hoverfloat;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.popular__content{
+    text-align: center;
+
+}
+.popular__name{
+    margin-block: 3rem .25rem;
+    font-weight: var(--font-semi-bold);
+    font-size: var(--font-lg);
+}
+
+.popular__description{
+    margin-block: 0 .25rem;
+    font-size: var(--font-xm);
+}
+
+.popular__price{
+    color: var(--primary-color);
+    font-weight: var(--font-medium);
+    font-size: var(--font-md);
+}
+
+@media(min-width:767px){
+    .popular__container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(min-width:1024px){
+    .popular__container{
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+
+    .popular__img{
+        width: 120px;
+    }
+}
+
+@keyframes hoverfloat{
+    0%{
+        transform:translateY(30px)
+    }
+    50%{
+        transform:translateY(0px)
+    }
+    100%{
+        transform:translateY(30px)
+    }
+}

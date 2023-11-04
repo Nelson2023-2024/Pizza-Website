@@ -1,0 +1,50 @@
+.footer{
+    padding-block:3rem 2rem ;
+   
+}
+
+.footer__container{
+    gap: 3rem;
+}
+.footer__copy {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: var(--font-xm);
+  color: var(--text-color-light);
+}
+.love{
+  font-size: 29px;
+  color: red;
+}
+
+/* SCROLL UP */
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--container-color);
+  box-shadow: 0 4px 12px hsla(19, 64%, 24%, .1);
+  padding: .35rem .5rem;
+  border-radius: .25rem;
+  font-size: 1.3rem;
+  z-index: 1000;
+  color: var(--primary-color);
+  display: inline-flex;
+  transition: bottom .3s transform .3s background .4s;
+}
+.scrollup:hover{
+  transform: translateY(-.25rem);
+  background-color: #eee;
+}
+
+@media (min-width:1024px){
+  .scrollup{
+  right: 3rem;
+  font-size: 3rem;
+  }
+}
+
+/* show Scroll up using JS */
+.show-scroll{
+  bottom: 3rem;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png " type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./aboutus.css">
+    <link rel="stylesheet" href="./popular.css">
+    <link rel="stylesheet" href="./recently.css">
+    <link rel="stylesheet" href="./news.css">
+    <link rel="stylesheet" href="./footer.css">
+
+    <title>PizzaPalace</title>
+</head>
+
+<body>
+    <!---------------------Header---------------------->
+    <header id="header" class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="/img/logo.png" alt="">
+                PizzaPalace
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Ubout US</a></li>
+                    <li class="nav__item"><a href="#popular" class="nav__link">Popular</a></li>
+                    <li class="nav__item"><a href="#recently" class="nav__link">Recently</a></li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+
+                <img src="./img/pizza-slice.png" alt="nav image" class="nav__img-1">
+            </div>
+
+            <div class="nav__buttons">
+                <i class="fa-solid fa-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!---------------------MAIN---------------------->
+    <main class="main">
+
+        <!---------------------HOME---------------------->
+        <section id="home" class="home section">
+            <div class="home__container container grid">
+                <img src="./img/home-pizza.png" alt="home image" class="home__img">
+
+                <div class="home__data">
+                    <h1 class="home__title">Delicious Pizzas That Make Your Taste Buds Dance!</h1>
+
+                    <p class="home__description">Welcome to a world of pizza perfection! At our pizzeria, we craft each
+                        pie with love and top-quality ingredients to ensure a slice of heaven in every bite. Whether
+                        you're a fan of classic Margherita or adventurous with our exotic toppings, we've got a flavor
+                        for everyone. Join us on a journey of flavor, and experience the joy of pizza like never before.
+                    </p>
+
+                    <a href="#" class="button">
+                        Order Now <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------ABOUT---------------------->
+
+        <section id="about" class="about section">
+
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <span class="section__subtitle">About Us</span>
+                    <h2 class="section__title">Welcome to Our Pizza World</h2>
+                    <p class="about__description">At our pizzeria, we are passionate about creating delicious pizzas
+                        that satisfy your cravings. With years of experience and a commitment to using only the finest
+                        ingredients, we craft each pizza with love and care. From traditional classics to unique and
+                        innovative flavors, we offer a wide variety of options to please every palate. Join us on a
+                        culinary journey and experience the joy of our mouthwatering pizzas.</p>
+                </div>
+
+                <img src="./img/about-pizza.png" alt="" class="about__img">
+            </div>
+
+        </section>
+        <!---------------------POPULAR---------------------->
+        <section id="popular" class="popular section">
+            <span class="section__subtitle">The Best Place</span>
+            <h2 class="section__title">Popular Pizza</h2>
+
+            <div class="popular__container container grid">
+                <!---------FIRST CARD--------------->
+                <div class="popular__card">
+                    <img src="./img/popular-pizza-1.png" alt="popular image" class="popular__img">
+
+                    <div class="popular__content">
+                        <a href="" class="popular__button">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+
+                        <h3 class="popular__name">Supreme Pizza</h3>
+
+                        <p class="popular__description">A classic pizza loaded with pepperoni, sausage, mushrooms,
+                            onions, and green peppers.</p>
+
+                        <p class="popular__price">$15.99</p>
+
+                    </div>
+                </div>
+
+                <!---------SECOND CARD--------------->
+                <div class="popular__card">
+                    <img src="./img/popular-pizza-2.png" alt="popular image" class="popular__img">
+
+                    <div class="popular__content">
+                        <a href="" class="popular__button">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+
+                        <h3 class="popular__name">BBQ Chicken Pizza</h3>
+
+                        <p class="popular__description">A tasty pizza with tangy BBQ sauce, grilled chicken, red onions,
+                            and cilantro.</p>
+
+                        <p class="popular__price">$17.99</p>
+
+                    </div>
+                </div>
+
+                <!---------THIRD CARD--------------->
+                <div class="popular__card">
+                    <img src="./img/popular-pizza-3.jpeg" alt="popular image" class="popular__img">
+
+                    <div class="popular__content">
+                        <a href="" class="popular__button">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+
+                        <h3 class="popular__name">Margherita Pizza</h3>
+
+                        <p class="popular__description">A simple yet delicious pizza featuring fresh tomatoes,
+                            mozzarella cheese, and basil.</p>
+
+                        <p class="popular__price">$12.99</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!---------------------RECENTLY---------------------->
+        <section class="recently section" id="recently">
+            <div class="recently__container container grid">
+                <div class="recently__data">
+                    <span class="section__subtitle">Recently Added</span>
+
+                    <h2 class="section__title">
+                        Buffallo <br>
+                        Chicken <br>
+                        pizza
+
+                    </h2>
+
+                    <p class="recently__description">
+                        Check out what's new and don't miss out on the opportunities to treat yourself to a delicious
+                        meal.Indulge in the experience and savor every bite.
+
+                    </p>
+                    <a href="#" class="button">
+                        Order Now <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <img src="./img/recently-pizza.jpg" alt="recently" class="recently__img">
+            </div>
+
+        </section>
+
+        <!-----------------------NEWSLETTER------------------->
+        <section class="newsletter section">
+            <div class="newsletter__container container grid">
+                <img src="./img/pizza-slice.png" alt="newsletter image" class="newsletter__img">
+
+                <div class="newsletter__data">
+                    <span class="section__subtitle">Newsletter</span>
+                    <h2 class="section__title">
+                        Subscribe for <br>
+                        exclusive offers
+                    </h2>
+
+                    <form action="" class="newsletter__form">
+                        <input type="email" class="newsletter__input" placeholder="Enter email">
+
+                        <button class="button newsletter__button">
+                            Subscribe <i class="fa-regular fa-paper-plane"></i>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!----------------------FOOTER------------------------>
+        <footer class="footer">
+
+
+            <div class="footer__copy container">
+                &copy; Copyright Nelson 2023. All rights reserved <br>
+                Made with <span class="love">&hearts;</span> by Nelson
+            </div>
+        </footer>
+
+        <!-- SCROLL UP BUTTON -->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+
+
+    </main>
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+</body>
+
+</html>

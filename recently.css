@@ -1,0 +1,31 @@
+.recently__container{
+    gap: 4rem;
+}
+.recently__data{
+    text-align: center;
+}
+
+.recently__description{
+    margin-bottom: 2rem;
+}
+
+
+@media (min-width:576px){
+    .recently__container{
+        grid-template-columns: .7fr;
+        justify-content: center;
+    }
+}
+
+@media(min-width:1024px){
+    .recently__container{
+        grid-template-columns: 300px 400px;
+        align-items: center;
+        gap: 7rem;
+        padding-bottom: 2rem;
+
+    }
+    .recently__data{
+        text-align: left;
+    }
+}
